@@ -84,11 +84,28 @@
             padding-bottom: 0;
         }
     
+        #footer {
+            background-color: #000;
+        }
+    
+        .socials {
+            color: #fff;
+            font-family: 'Cinzel', serif;
+            font-family: 'Yantramanav', sans-serif;
+            font-size: 1.3em;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+    
+        #social-links img {
+            width: 1vw;
+        }
+    
+        #twitter {
+            padding-right: 0.2vw;
+        }
+    
         @media only screen and (max-width: 600px) {
-            body {
-                background-color: yellow;
-            }
-
             img {
                 width: 45vw !important;
                 padding: 3vw 0 !important;
@@ -99,14 +116,41 @@
                 padding-left: 6vw !important;
                 padding-right: 6vw !important;
             }
-
+    
             button {
                 font-size: 1.2em !important;
                 padding: 1.5vh !important;
                 width: 55vw !important;
             }
+
+            .socials {
+                padding: 0;
+            }
     
-    
+            #social-links img {
+                width: 5.5vw !important;
+            }
+
+            #twitter {
+                padding-right: 0vw !important;
+            }
+
+            #insta {
+                padding-right: 2vw !important;
+                padding-left: 2vw !important;
+            }
+
+            .socials {
+                padding-top: 0vh !important;
+                padding-bottom: 0vh !important;
+                padding-right: 6vw !important;
+                padding-left: 6vw !important;
+            }
+
+            #bottom-social {
+                padding-bottom: 10vh;
+            }
+
         }
     </style>
 </head>
@@ -174,6 +218,25 @@
 
     </div>
 
+    <table id="footer">
+        <tr>
+            <td class="socials">
+                Connect With Us
+            </td>
+        </tr>
+        <tr>
+            <td id="social-links">
+                <a href="https://twitter.com/E46Finder" id="twitter"><img src="https://imgur.com/iWPgSgX.jpg"></a>
+                <a href="https://www.instagram.com/e46_finder/" id="insta"><img src="https://imgur.com/5oyZTfe.jpg"></a>
+                <a href="https://www.facebook.com/E46-Finder-101489462568944"><img src="https://imgur.com/IUwf2RZ.jpg"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="socials" id="bottom-social">
+                If you need any help, simply reply to this email
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
